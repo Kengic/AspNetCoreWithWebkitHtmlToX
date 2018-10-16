@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:2.2.0-preview2-aspnetcore-runtime AS base
+FROM microsoft/dotnet:2.2-sdk AS base
 COPY ./libwkhtmltox.so /usr/lib/
 RUN apt-get update && apt-get install -yq --no-install-recommends libgdiplus \
 fontconfig xfonts-utils fonts-wqy-microhei ttf-wqy-microhei fonts-wqy-zenhei \
